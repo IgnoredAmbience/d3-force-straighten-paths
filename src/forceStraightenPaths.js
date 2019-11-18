@@ -147,7 +147,7 @@ export default function(paths) {
     function init() {
         if(!_nodes)
             return;
-        var nodeById = d3.map(_nodes, _id);
+        var nodeById = map(_nodes, _id);
         _paths = _inputPaths.map(function(path) {
             return {
                 nodes: _pathNodes(path).map(function(n) {
